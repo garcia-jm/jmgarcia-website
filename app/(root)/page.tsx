@@ -11,8 +11,8 @@ const Home = () => {
       <Hero />
       <About />
       <Projects />
-      <Contact />
       <Experience />
+      <Contact />
     </div>
   );
 };
