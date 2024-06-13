@@ -32,16 +32,22 @@ const ContactForm = () => {
 
   const onSubmit = async (values: z.infer<typeof contactSchema>) => {
     setIsLoading(true);
-    console.log("Before fetch");
-    await fetch("api/emails", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(values),
-    });
-    console.log("After fetch");
-
-    setIsLoading(false);
+    try {
+      console.log("Before fetch");
+      await fetch("api/emails", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(values),
+      });
+      console.log("After fetch");
+    } catch (error) {
+      console.error("Fetch failed:", error);
+      // Handle error appropriately
+    } finally {
+      setIsLoading(false);
+    }
   };
+
   return (
     <Form {...formData}>
       <form
