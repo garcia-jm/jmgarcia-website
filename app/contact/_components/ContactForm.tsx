@@ -32,7 +32,7 @@ const ContactForm = () => {
 
   const onSubmit = async (values: z.infer<typeof contactSchema>) => {
     setIsLoading(true);
-    await fetch("/api/emails", {
+    await fetch("https://www.justinmarigarcia.com/api/emails", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(values),
