@@ -34,7 +34,7 @@ const ContactForm = () => {
   const onSubmit = async (values: z.infer<typeof contactSchema>) => {
     setIsLoading(true);
     try {
-      console.log("Before axios");
+      console.log(values);
       await axios.post("/api/emails", values);
       console.log("After axios");
     } catch (error) {
