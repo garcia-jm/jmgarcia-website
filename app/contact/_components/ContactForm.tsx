@@ -33,7 +33,7 @@ const ContactForm = () => {
   const onSubmit = async (values: z.infer<typeof contactSchema>) => {
     setIsLoading(true);
     try {
-      await fetch("/api/order", {
+      await fetch("/api/email", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -86,7 +86,6 @@ const ContactForm = () => {
                       {...field}
                     />
                   </FormControl>
-                  <FormMessage className="text-[0.8em]" />
                 </FormItem>
               )}
             />
@@ -120,7 +119,6 @@ const ContactForm = () => {
                   {...field}
                 />
               </FormControl>
-              <FormMessage />
             </FormItem>
           )}
         />
