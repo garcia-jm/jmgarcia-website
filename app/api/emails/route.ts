@@ -6,6 +6,7 @@ const resend = new Resend(process.env.RESEND_API_KEY);
 
 export const POST = async (request: Request) => {
   const { firstName, lastName, company, message, email } = await request.json();
+  console.log(firstName, lastName, company, message, email);
   await resend.emails.send({
     from: "email@justinmarigarcia.com",
     to: "garcia.justinmari@gmail.com",
@@ -15,5 +16,3 @@ export const POST = async (request: Request) => {
 
   return NextResponse.json({ message: "Email sent!" });
 };
-
-// codewithguillaume.com
