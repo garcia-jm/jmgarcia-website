@@ -34,7 +34,8 @@ const ContactForm = () => {
     setIsLoading(true);
     try {
       console.log(window.location.href);
-      await fetch("https://www.justinmarigarcia.com/api/emails", {
+      console.log(values);
+      await fetch("/api/email", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
