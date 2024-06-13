@@ -1,12 +1,12 @@
 "use server";
 
 import ContactEmail from "@/app/emails/Contact";
-import { NextRequest, NextResponse } from "next/server";
+import { NextResponse } from "next/server";
 import { Resend } from "resend";
 
 // const resend = new Resend(process.env.RESEND_API_KEY);
 
-export async function POST(request: NextRequest) {
+export async function POST(request: Request, response: Response) {
   console.log(request.body);
   // const { firstName, lastName, company, message, email } = await request.json();
   // await resend.emails.send({
