@@ -34,9 +34,7 @@ const ContactForm = () => {
   const onSubmit = async (values: z.infer<typeof contactSchema>) => {
     setIsLoading(true);
     try {
-      console.log(values);
-      await axios.post("/api/emails", "Hello, World!");
-      console.log("After axios");
+      await axios.post("/pages/api/emails", values);
     } catch (error) {
       console.log("Axios request failed:", error);
       // Handle error appropriately
