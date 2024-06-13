@@ -32,7 +32,6 @@ const ContactForm = () => {
   });
 
   const onSubmit = async (values: z.infer<typeof contactSchema>) => {
-    "use server";
     setIsLoading(true);
     try {
       await axios.post("/api/emails", values);
