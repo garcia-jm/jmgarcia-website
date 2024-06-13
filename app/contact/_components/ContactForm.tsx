@@ -15,6 +15,7 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
+import axios from "axios";
 
 const ContactForm = () => {
   const [isLoading, setIsLoading] = useState(false);
@@ -33,15 +34,13 @@ const ContactForm = () => {
   const onSubmit = async (values: z.infer<typeof contactSchema>) => {
     setIsLoading(true);
     try {
-      console.log("Before fetch");
-      await fetch("api/emails", {
-        method: "POST",
+      console.log("Before axios");
+      await axios.post("/api/emails", values, {
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(values),
       });
-      console.log("After fetch");
+      console.log("After axios");
     } catch (error) {
-      console.error("Fetch failed:", error);
+      console.log("Axios request failed:", error);
       // Handle error appropriately
     } finally {
       setIsLoading(false);
