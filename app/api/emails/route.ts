@@ -1,3 +1,5 @@
+"use server";
+
 import ContactEmail from "@/app/emails/Contact";
 import { NextRequest, NextResponse } from "next/server";
 import { Resend } from "resend";
