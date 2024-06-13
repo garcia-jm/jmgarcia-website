@@ -15,7 +15,6 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
-import axios from "axios";
 
 const ContactForm = () => {
   const [isLoading, setIsLoading] = useState(false);
