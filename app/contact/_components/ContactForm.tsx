@@ -33,8 +33,6 @@ const ContactForm = () => {
   const onSubmit = async (values: z.infer<typeof contactSchema>) => {
     setIsLoading(true);
     try {
-      console.log(window.location.href);
-      console.log(values);
       await fetch("/api/email", {
         method: "POST",
         headers: {
