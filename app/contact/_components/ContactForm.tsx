@@ -35,9 +35,7 @@ const ContactForm = () => {
     setIsLoading(true);
     try {
       console.log("Before axios");
-      await axios.post("/api/emails", values, {
-        headers: { "Content-Type": "application/json" },
-      });
+      await axios.post("/api/emails", values);
       console.log("After axios");
     } catch (error) {
       console.log("Axios request failed:", error);
