@@ -1,7 +1,6 @@
 "use client";
 
 import { contactSchema } from "@/app/validationSchema";
-import { Button } from "@/components/ui/button";
 import {
   Form,
   FormControl,
@@ -12,14 +11,12 @@ import {
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
 import { sendEmail } from "../actions";
+import SubmitButton from "./SubmitButton";
 
 const ContactForm = () => {
-  const [isLoading, setIsLoading] = useState(false);
-
   const formData = useForm<z.infer<typeof contactSchema>>({
     resolver: zodResolver(contactSchema),
     defaultValues: {
@@ -136,13 +133,7 @@ const ContactForm = () => {
             </FormItem>
           )}
         />
-        <Button
-          className="bg-[#4ade80] text-[#3f3f46]"
-          type="submit"
-          disabled={isLoading}
-        >
-          Submit
-        </Button>
+        <SubmitButton />
       </form>
     </Form>
   );
