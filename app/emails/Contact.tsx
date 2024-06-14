@@ -14,11 +14,11 @@ import {
 import * as React from "react";
 
 interface ContactEmailProps {
-  firstName?: string;
-  lastName?: string;
-  email: string;
-  company?: string;
-  message: string;
+  firstName?: string | null | undefined;
+  lastName?: string | null | undefined;
+  email: string | null | undefined;
+  company?: string | null | undefined;
+  message: string | null | undefined;
 }
 
 export const ContactEmail = ({

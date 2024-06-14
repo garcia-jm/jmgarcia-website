@@ -15,6 +15,7 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
+import { sendEmail } from "../actions";
 
 const ContactForm = () => {
   const [isLoading, setIsLoading] = useState(false);
@@ -30,30 +31,27 @@ const ContactForm = () => {
     },
   });
 
-  const onSubmit = async (values: z.infer<typeof contactSchema>) => {
-    setIsLoading(true);
-    try {
-      await fetch("/api/email", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(values),
-      });
-    } catch (error) {
-      console.log("Axios request failed:", error);
-      // Handle error appropriately
-    } finally {
-      setIsLoading(false);
-    }
-  };
+  // const onSubmit = async (values: z.infer<typeof contactSchema>) => {
+  //   setIsLoading(true);
+  //   try {
+  //     await fetch("/api/email", {
+  //       method: "POST",
+  //       headers: {
+  //         "Content-Type": "application/json",
+  //       },
+  //       body: JSON.stringify(values),
+  //     });
+  //   } catch (error) {
+  //     console.log("Axios request failed:", error);
+  //     // Handle error appropriately
+  //   } finally {
+  //     setIsLoading(false);
+  //   }
+  // };
 
   return (
     <Form {...formData}>
-      <form
-        onSubmit={formData.handleSubmit(onSubmit)}
-        className="flex flex-col gap-6 w-full"
-      >
+      <form action={sendEmail} className="flex flex-col gap-6 w-full">
         <div className="flex items-center gap-4">
           <div className="w-full">
             <FormField
