@@ -34,9 +34,11 @@ export const learnAtSchool = [
   "HTML5",
   "JavaScript",
   "CSS3",
+  "Bootstrap",
   "Java",
   ".NET",
   "C#",
+  "ASP.NET",
   "ASP.NET MVC",
   "Object Oriented Programming",
   "Node.js",
@@ -44,7 +46,12 @@ export const learnAtSchool = [
   "jQuery",
   "Ajax",
   "RESTFul Api",
+  "MySQL",
+  "Microsoft SQL Server",
   "Python",
+  "Git",
+  "GitHub",
+  "Postman",
 ];
 
 export const learnAtWork = [
@@ -54,15 +61,19 @@ export const learnAtWork = [
   "Prisma",
   "Tailwind CSS",
   "TypeScript",
-  "Redux.js",
+  "Redux",
   "Stripe",
   "Shadcn",
   "Axios",
+  "PostgreSQL",
+  "MongoDB",
   "NextAuth.js",
-  "MySQL",
   "Fabric.js",
   "Framer motion",
   "Chakra-ui",
+  "Resend",
+  "Vercel",
+  "Figma",
 ];
 
 export const projects = [
