@@ -57,40 +57,43 @@ const About = () => {
                 shared with me, I've been grinding to make it happen.
               </p>
             </Reveal>
-            <div className="flex items-center">
+            <div className="flex items-center flex-wrap gap-3">
               <Reveal>
                 <div className="flex items-center emerald">
                   <p>Links</p>
                   <ArrowRight className="size-4 ml-2 mr-4" />
                 </div>
               </Reveal>
+
               <Reveal>
-                <div className="flex items-center gap-3">
-                  <Link href="https://github.com/garcia-jm" target="_blank">
-                    <div className="emerald border border-[#4ade80] rounded-full p-[8px] text-[1em] cursor-pointer hover:bg-[#4ade80] hover:text-[#ebecf3] transition-all ease-in-out duration-300">
-                      <FaGithub />
-                    </div>
-                  </Link>
-                  <Link
-                    href="https://www.linkedin.com/in/garcia-jm/"
-                    target="_blank"
-                  >
-                    <div className="emerald border border-[#4ade80] rounded-full p-[8px] text-[1em] cursor-pointer hover:bg-[#4ade80] hover:text-[#ebecf3] transition-all ease-in-out duration-300">
-                      <FaLinkedin />
-                    </div>
-                  </Link>
-                  <a
-                    href="/assets/Garcia-Justin-Mari-Irlandez-Resume.pdf"
-                    target="_blank"
-                  >
-                    <div className="flex gap-4 items-center emerald border border-[#4ade80] text-[0.8em] px-4 py-2 rounded-[25px] hover:bg-[#4ade80] hover:text-[#ebecf3] transition-all ease-in-out duration-300 cursor-pointer">
-                      Download CV{" "}
-                      <span>
-                        <GrDownload />
-                      </span>
-                    </div>
-                  </a>
-                </div>
+                <Link href="https://github.com/garcia-jm" target="_blank">
+                  <div className="emerald border border-[#4ade80] rounded-full p-[8px] text-[1em] cursor-pointer hover:bg-[#4ade80] hover:text-[#ebecf3] transition-all ease-in-out duration-300">
+                    <FaGithub />
+                  </div>
+                </Link>
+              </Reveal>
+              <Reveal>
+                <Link
+                  href="https://www.linkedin.com/in/garcia-jm/"
+                  target="_blank"
+                >
+                  <div className="emerald border border-[#4ade80] rounded-full p-[8px] text-[1em] cursor-pointer hover:bg-[#4ade80] hover:text-[#ebecf3] transition-all ease-in-out duration-300">
+                    <FaLinkedin />
+                  </div>
+                </Link>
+              </Reveal>
+              <Reveal>
+                <a
+                  href="/assets/Garcia-Justin-Mari-Irlandez-Resume.pdf"
+                  target="_blank"
+                >
+                  <div className="flex gap-4 items-center emerald border border-[#4ade80] text-[0.8em] px-4 py-2 rounded-[25px] hover:bg-[#4ade80] hover:text-[#ebecf3] transition-all ease-in-out duration-300 cursor-pointer text-nowrap">
+                    Download CV{" "}
+                    <span>
+                      <GrDownload />
+                    </span>
+                  </div>
+                </a>
               </Reveal>
             </div>
           </div>
