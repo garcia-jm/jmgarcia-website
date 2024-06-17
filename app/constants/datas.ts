@@ -36,9 +36,9 @@ export const learnAtSchool = [
   "CSS3",
   "Bootstrap",
   "Java",
-  ".NET",
   "C#",
-  "ASP.NET",
+  ".NET",
+  "ASP.NET Core",
   "ASP.NET MVC",
   "Object Oriented Programming",
   "Node.js",
@@ -60,6 +60,7 @@ export const learnAtWork = [
   "Next.js",
   "Prisma",
   "Tailwind CSS",
+  "SASS",
   "TypeScript",
   "Redux",
   "Stripe",
@@ -74,6 +75,13 @@ export const learnAtWork = [
   "Resend",
   "Vercel",
   "Figma",
+  "SEO optimization",
+  "SSR",
+  "SSG",
+  "UI / UX Design",
+  "Responsive Web Design",
+  "Server Actions",
+  "API route handling",
 ];
 
 export const projects = [
@@ -86,13 +94,15 @@ export const projects = [
       "MariaDB",
       "Scene Builder",
     ],
+    shortDescription:
+      "A JavaFX Application that follows an Object-Oriented Programming Paradigm that uses MariaDB to store and organize user's data.",
     description:
       "A JavaFX Application that follows an Object-Oriented Programming Paradigm that uses MariaDB to store and organize user's data. The Application allows its users to add, update, retrieve, and delete an account or information of customers, agents, and/or packages.",
     imgUrl: [
-      images.w6_frontPage,
-      images.w6_customerPage,
-      images.w6_agentsPage,
-      images.w6_packagesPage,
+      "./assets/images/Workshop 6/front-page.png",
+      "./assets/images/Workshop 6/agents-page.png",
+      "./assets/images/Workshop 6/customer-page.png",
+      "./assets/images/Workshop 6/packages-page.png",
     ],
   },
   {
@@ -108,9 +118,11 @@ export const projects = [
       "Ajax",
       "MariaDB",
     ],
+    shortDescription:
+      "An Asynchronous Web Application that uses Ajax to make requests to the server.",
     description:
       "An Asynchronous Web Application that uses Ajax to make requests to the server that has access to the database. The Agent Management Application lets its users manage the agent table by adding, retrieving, updating, and deleting an agent account or information.",
-    imgUrl: [images.w7_frontPage],
+    imgUrl: ["./assets/images/Workshop 7/front-page.png"],
   },
   {
     title: "Travel Experts Android App",
@@ -123,14 +135,16 @@ export const projects = [
       "XML",
       "MariaDB",
     ],
+    shortDescription:
+      "An Android Application that uses RESTful Api to communicate to the server and requests data from the server that have access to the database",
     description:
       "An Android Application that uses RESTful Api to communicate to the server and requests data from the server that have access to the database. The Travel Experts Android App allows its users to register an account, log in, edit their information, view their booking history active/inactive, and see the available booking packages.",
     imgUrl: [
-      images.w8_frontPage,
-      images.w8_welcomePage,
-      images.w8_profilePage,
-      images.w8_bookingPage,
-      images.w8_registerPage,
+      "./assets/images/Workshop 8/front-page.png",
+      "./assets/images/Workshop 8/welcome-page.png",
+      "./assets/images/Workshop 8/profile-page.png",
+      "./assets/images/Workshop 8/register-page.png",
+      "./assets/images/Workshop 8/booking-page.png",
     ],
   },
   {
@@ -146,20 +160,21 @@ export const projects = [
       "Redux.js",
       "MySQL",
     ],
+    shortDescription: "An e-commerce website built in Next.js framework.",
     description:
       "An e-commerce website built in Next.js framework. The website has key features such as an add-to-cart functionality, a billing system, a user-authentication, and an edit studio where users can customize a product that they want to purchase.",
     imgUrl: [
-      images.ing_1,
-      images.ing_2,
-      images.ing_3,
-      images.ing_4,
-      images.ing_5,
-      images.ing_6,
-      images.ing_7,
-      images.ing_8,
-      images.ing_9,
-      images.ing_10,
-      images.ing_11,
+      "./assets/images/Ingraph/ing_screenshot_1.png",
+      "./assets/images/Ingraph/ing_screenshot_2.png",
+      "./assets/images/Ingraph/ing_screenshot_3.png",
+      "./assets/images/Ingraph/ing_screenshot_4.png",
+      "./assets/images/Ingraph/ing_screenshot_5.png",
+      "./assets/images/Ingraph/ing_screenshot_6.png",
+      "./assets/images/Ingraph/ing_screenshot_7.png",
+      "./assets/images/Ingraph/ing_screenshot_8.png",
+      "./assets/images/Ingraph/ing_screenshot_9.png",
+      "./assets/images/Ingraph/ing_screenshot_10.png",
+      "./assets/images/Ingraph/ing_screenshot_11.png",
     ],
   },
 
@@ -175,9 +190,11 @@ export const projects = [
       "Express.js",
       "Third Party API",
     ],
+    shortDescription:
+      "A React Web Application that uses third-party API to gather and provide data or information to the users.",
     description:
       "A React Web Application that uses third-party API to gather and provide data or information to the users. Radar Recipe serves as a tool for people who are looking for food that they want to cook by providing the image of the food, ingredients, and steps on how to prepare and cook the food.",
-    imgUrl: [images.comingsoon],
+    imgUrl: ["./assets/images/Recipe Radar/coming-soon.jpeg"],
   },
 ];
 

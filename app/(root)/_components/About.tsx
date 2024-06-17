@@ -1,76 +1,114 @@
 import { FaSchoolFlag } from "react-icons/fa6";
 import { MdOutlineWork } from "react-icons/md";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { learnAtSchool, learnAtWork } from "@/app/constants/datas";
 import Reveal from "./Reveal";
 import SkillCard from "./SkillCard";
 import Header from "./Header";
+import MaxWidthWrapper from "@/components/MaxWidthWrapper";
+import { ArrowRight } from "lucide-react";
+import { GrDownload } from "react-icons/gr";
+import Link from "next/link";
 
 const About = () => {
   return (
-    <div className="flex flex-col gap-4 mb-[20rem]">
-      <Header title="About" position="left" />
-      <div className="flex flex-col items-center md:flex-row gap-8 sm:gap-4">
-        <div className="flex flex-col gap-8 smoke text-[1em] sm:text-[1.1em] flex-[6] text-justify">
-          <Reveal>
-            <p>
-              Hey I&apos;m Justin, My dad introduced computer to us when I was 5
-              years old. I witnessed the success and innovation of technology,
-              and how it grew and slowly changed into something that we all use
-              in our daily lives. I want to be part of that innovation and help
-              create new technologies.
-            </p>
-          </Reveal>
-          <Reveal>
-            <p>
-              My passion lies in creating seamless, user-friendly web
-              applications that make a difference. Recently I&apos;ve been
-              playing around with these frameworks and libraries such as Next.js
-              and React to create robust web applications. My journey in web
-              development began with a curiosity for how the internet works and
-              evolved into a full-fledged career dedicated to innovation and
-              problem-solving.
-            </p>
-          </Reveal>
-          <Reveal>
-            <p>
-              Beyond coding, I have a passion for continuous learning and
-              improvement. I often find myself watching videos about creating
-              innovative and visually stunning websites, as well as tutorials on
-              programming languages, frameworks, and libraries that I am eager
-              to master. This helps me stay up-to-date with the latest trends
-              and technologies, ensuring that I am always prepared for the next
-              web application I want to develop. I love discovering new tricks
-              and techniques that can enhance my projects, making them more
-              efficient and user-friendly.
-            </p>
-          </Reveal>
-          <Reveal>
-            <p>
-              In addition to video tutorials, I also enjoy reading articles and
-              blogs written by industry experts, participating in online
-              courses, and engaging in coding challenges. These activities not
-              only expand my knowledge but also inspire me to think creatively
-              and push the boundaries of what is possible in web development. My
-              thirst for knowledge drives me to explore diverse topics, from
-              advanced CSS animations to the intricacies of backend development,
-              allowing me to become a more versatile and well-rounded developer.
-            </p>
-          </Reveal>
+    <section className="mb-[20rem]">
+      <MaxWidthWrapper className="flex flex-col gap-4 ">
+        <Header title="About" position="left" />
+        <div className="flex flex-col items-center xl:flex-row gap-8 xl:gap-4">
+          <div className="flex flex-col gap-8 smoke text-[0.9em] sm:text-[1em] flex-[6] text-justify">
+            <Reveal>
+              <p>
+                My passion lies in creating seamless, user-friendly web
+                applications that make a difference. Recently I&apos;ve been
+                playing around with these frameworks and libraries such as
+                Next.js and React to create robust web applications. My journey
+                in web development began with a curiosity for how the internet
+                works and evolved into a full-fledged career dedicated to
+                innovation and problem-solving.
+              </p>
+            </Reveal>
+            <Reveal>
+              <p>
+                Beyond coding, I have been continuously learning, and seeking
+                for my improvement. I often find myself watching videos about
+                creating robust and visually stunning websites. I love watching
+                tutorials and reading blogs about programming languages,
+                frameworks, and libraries and I'd be lying if I say I never
+                search for solutions to my errors on GitHub community thread
+                posts and stack overflow. Adding all of that, like watching
+                tutorials on YouTube and finding solutions on the internet is
+                what makes me believe in myself and the skills that I have that
+                I can develop robust web applications and be up-to-date with the
+                latest trends and what technologies most of the developers use
+                today.
+              </p>
+            </Reveal>
+            <Reveal>
+              <p>
+                In addition to video tutorials, and reading blogs or articles, I
+                also have friends who are in the Software engineering sector,
+                and my brother who started as a web developer and is now in a
+                DevOps position with over a decade of experience. I'm privileged
+                and lucky to have them around to share their knowledge and
+                experiences with me. They are a big help in aligning the path I
+                chose in my journey to become a Web Developer / Software
+                Developer. Now, with the learnings and knowledge they have
+                shared with me, I've been grinding to make it happen.
+              </p>
+            </Reveal>
+            <div className="flex items-center">
+              <Reveal>
+                <div className="flex items-center emerald">
+                  <p>Links</p>
+                  <ArrowRight className="size-4 ml-2 mr-4" />
+                </div>
+              </Reveal>
+              <Reveal>
+                <div className="flex items-center gap-3">
+                  <Link href="https://github.com/garcia-jm" target="_blank">
+                    <div className="emerald border border-[#4ade80] rounded-full p-[8px] text-[1em] cursor-pointer hover:bg-[#4ade80] hover:text-[#ebecf3] transition-all ease-in-out duration-300">
+                      <FaGithub />
+                    </div>
+                  </Link>
+                  <Link
+                    href="https://www.linkedin.com/in/garcia-jm/"
+                    target="_blank"
+                  >
+                    <div className="emerald border border-[#4ade80] rounded-full p-[8px] text-[1em] cursor-pointer hover:bg-[#4ade80] hover:text-[#ebecf3] transition-all ease-in-out duration-300">
+                      <FaLinkedin />
+                    </div>
+                  </Link>
+                  <a
+                    href="/assets/Garcia-Justin-Mari-Irlandez-Resume.pdf"
+                    target="_blank"
+                  >
+                    <div className="flex gap-4 items-center emerald border border-[#4ade80] text-[0.8em] px-4 py-2 rounded-[25px] hover:bg-[#4ade80] hover:text-[#ebecf3] transition-all ease-in-out duration-300 cursor-pointer">
+                      Download CV{" "}
+                      <span>
+                        <GrDownload />
+                      </span>
+                    </div>
+                  </a>
+                </div>
+              </Reveal>
+            </div>
+          </div>
+          <div className="flex flex-col md:flex-row lg:flex-col gap-8 flex-[4]">
+            <SkillCard
+              Icon={FaSchoolFlag}
+              title="Learn at School"
+              skills={learnAtSchool}
+            />
+            <SkillCard
+              Icon={MdOutlineWork}
+              title="Learn at Work"
+              skills={learnAtWork}
+            />
+          </div>
         </div>
-        <div className="flex flex-col gap-8 flex-[4]">
-          <SkillCard
-            Icon={FaSchoolFlag}
-            title="Learn at School"
-            skills={learnAtSchool}
-          />
-          <SkillCard
-            Icon={MdOutlineWork}
-            title="Learn at Work"
-            skills={learnAtWork}
-          />
-        </div>
-      </div>
-    </div>
+      </MaxWidthWrapper>
+    </section>
   );
 };
 

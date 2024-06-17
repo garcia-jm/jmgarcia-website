@@ -7,13 +7,13 @@ import Experience from "./_components/Experience";
 
 const Home = () => {
   return (
-    <div className="flex flex-col">
+    <main className="flex flex-col">
       <Hero />
       <About />
       <Projects />
       <Experience />
       <Contact />
-    </div>
+    </main>
   );
 };
 

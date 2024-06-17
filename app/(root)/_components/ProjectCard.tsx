@@ -1,59 +1,53 @@
 "use client";
 
-import Image, { StaticImageData } from "next/image";
-import React from "react";
-
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-} from "@/components/ui/carousel";
 import Reveal from "./Reveal";
+import ProjectModal from "./ProjectModal";
+import { useState } from "react";
 
-interface ProjectCardProps {
+export interface ProjectProps {
   title: string;
   skills: string[];
+  shortDescription: string;
   description: string;
-  imgUrl: StaticImageData[] | string[];
+  imgUrl: string[];
 }
 
 const ProjectCard = ({
   title,
   skills,
+  shortDescription,
   description,
   imgUrl,
-}: ProjectCardProps) => {
+}: ProjectProps) => {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
-    <div className="group flex flex-col bg-[#3f3f46] p-6 rounded-[10px] justify-evenly w-full md:w-[45%] hover:scale-110 transition-all ease-in-out duration-300 hover:shadow-lg hover:shadow-[#4ade80]">
-      <div className="w-[100%] group-hover:w-[80%] group-hover:md:w-[90%] transition-all ease-in-out duration-300 mb-4 m-auto">
-        <Carousel>
-          <CarouselContent>
-            {imgUrl.map((url, index) => (
-              <CarouselItem key={index}>
-                <Image
-                  width={100}
-                  height={220}
-                  src={typeof url === "string" ? url : url.src}
-                  alt="Project"
-                  className="w-full h-[220px] xl:h-[500px] 2xl:h-[550px] object-fit"
-                />
-              </CarouselItem>
-            ))}
-          </CarouselContent>
-          {imgUrl.length > 1 && (
-            <CarouselPrevious className="opacity-0 hidden group-hover:flex group-hover:opacity-100 hover:border-[#4ade80] hover:bg-black hover:text-[#4ade80] transition-all duration-300 ease-in-out" />
-          )}
-          {imgUrl.length > 1 && (
-            <CarouselNext className="opacity-0 hidden group-hover:flex group-hover:opacity-100 hover:border-[#4ade80] hover:bg-black hover:text-[#4ade80] transition-all duration-300 ease-in-out" />
-          )}
-        </Carousel>
+    <div className="flex flex-col rounded-[10px] justify-between w-full lg:w-[45%]">
+      <ProjectModal
+        setIsOpen={setIsOpen}
+        isOpen={isOpen}
+        project={{
+          title,
+          skills,
+          description,
+          shortDescription,
+          imgUrl,
+        }}
+      />
+      <div
+        className="flex items-center rounded-md relative overflow-hidden bg-[#3f3f46] h-[150px] md:h-[200px] xl:h-[250px] justify-center w-full mb-6 mx-auto"
+        onClick={() => setIsOpen(true)}
+      >
+        <img
+          className="w-full h-[350px] absolute object-fit inset-0 rounded-md px-7 pt-10 md:pt-12 hover:transform hover:rotate-3 hover:scale-105 transition-all ease-in-out duration-300 cursor-pointer"
+          src={imgUrl[0]}
+          alt="project image"
+        />
       </div>
       <div className="flex gap-2 items-center mb-2">
         <div>
           <Reveal>
-            <p className="text-[#ebecf3] text-[0.7em] md:text-[1em] 2xl:text-[1.5em] font-bold text-nowrap">
+            <p className="text-[#ebecf3] text-[0.7em] md:text-[1em] 2xl:text-[1.3em] font-bold text-nowrap">
               {title}
               <span className="emerald">.</span>
             </p>
@@ -62,7 +56,7 @@ const ProjectCard = ({
         <hr className="border-[#828282] w-[100%] border-[1px]" />
       </div>
       <Reveal>
-        <p className="flex text-[0.7em] md:text-[0.9em] 2xl:text-[1.2em] flex-wrap mb-8">
+        <p className="flex text-[0.7em] md:text-[0.9em] 2xl:text-[1em] flex-wrap mb-4 tracking-tight">
           {skills.map((skill, index) => (
             <span
               key={index}
@@ -78,8 +72,8 @@ const ProjectCard = ({
         </p>
       </Reveal>
       <Reveal>
-        <p className="smoke text-[0.7em] md:text-[0.9em] 2xl:text-[1.2em] text-justify">
-          {description}
+        <p className="smoke text-[0.7em] md:text-[0.9em] 2xl:text-[1em] text-justify tracking-tight">
+          {shortDescription}
         </p>
       </Reveal>
     </div>
