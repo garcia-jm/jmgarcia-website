@@ -12,7 +12,7 @@ const Contact = () => {
       </Reveal>
       <Reveal>
         <p className="text-[#828282] text-[0.9em] xl:text-[1em] 2xl:text-[1.2em] text-center">
-          Shoot me an email if you want to connect! You can also
+          Shoot me an email if you want to connect! You can also find me
         </p>
       </Reveal>
       <Reveal>
