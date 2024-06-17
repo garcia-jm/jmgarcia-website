@@ -34,7 +34,7 @@ const About = () => {
                 for my improvement. I often find myself watching videos about
                 creating robust and visually stunning websites. I love watching
                 tutorials and reading blogs about programming languages,
-                frameworks, and libraries and I'd be lying if I say I never
+                frameworks, and libraries and I&apos;d be lying if I say I never
                 search for solutions to my errors on GitHub community thread
                 posts and stack overflow. Adding all of that, like watching
                 tutorials on YouTube and finding solutions on the internet is
@@ -49,12 +49,13 @@ const About = () => {
                 In addition to video tutorials, and reading blogs or articles, I
                 also have friends who are in the Software engineering sector,
                 and my brother who started as a web developer and is now in a
-                DevOps position with over a decade of experience. I'm privileged
-                and lucky to have them around to share their knowledge and
-                experiences with me. They are a big help in aligning the path I
-                chose in my journey to become a Web Developer / Software
-                Developer. Now, with the learnings and knowledge they have
-                shared with me, I've been grinding to make it happen.
+                DevOps position with over a decade of experience. I&apos;m
+                privileged and lucky to have them around to share their
+                knowledge and experiences with me. They are a big help in
+                aligning the path I chose in my journey to become a Web
+                Developer / Software Developer. Now, with the learnings and
+                knowledge they have shared with me, I&apos;ve been grinding to
+                make it happen.
               </p>
             </Reveal>
             <div className="flex items-center flex-wrap gap-3">
