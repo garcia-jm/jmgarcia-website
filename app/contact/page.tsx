@@ -3,10 +3,11 @@ import { IoCallSharp } from "react-icons/io5";
 import { BiLogoGmail } from "react-icons/bi";
 import { IoLocation } from "react-icons/io5";
 import Reveal from "../(root)/_components/Reveal";
+import MaxWidthWrapper from "@/components/MaxWidthWrapper";
 
 const ContactPage = () => {
   return (
-    <div className="flex flex-col sm:flex-row gap-8 mb-[8rem] md:items-center">
+    <MaxWidthWrapper className="flex flex-col lg:flex-row gap-8 mb-[8rem] lg:items-center">
       <div className="w-full xl:w-[50%] bg-[#252530] p-4 md:p-6 xl:p-8 2xl:py-12 2xl:px-16 rounded-[15px]">
         <Reveal>
           <p className="emerald text-[1.3em] lg:text-[1.5em] xl:text-[1.8em] 2xl:text-[2.5em] mb-2">
@@ -66,7 +67,7 @@ const ContactPage = () => {
           </div>
         </div>
       </div>
-    </div>
+    </MaxWidthWrapper>
   );
 };
 

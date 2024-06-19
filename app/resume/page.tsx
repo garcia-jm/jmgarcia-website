@@ -8,6 +8,7 @@ import Education from "./_components/Education";
 import Skills from "./_components/Skills";
 import About from "./_components/About";
 import Reveal from "../(root)/_components/Reveal";
+import MaxWidthWrapper from "@/components/MaxWidthWrapper";
 
 const ResumePage = () => {
   const [category, setCategory] = useState("");
@@ -17,13 +18,13 @@ const ResumePage = () => {
   };
 
   return (
-    <div className="flex flex-col sm:flex-row gap-12 mb-[10rem]">
-      <div className="flex flex-col gap-4 w-full sm:w-[50%] lg:w-[40%] xl:w-[30%]">
+    <MaxWidthWrapper className="flex flex-col xl:flex-row gap-12 mb-[10rem]">
+      <div className="flex flex-col gap-4 w-full xl:w-[30%]">
         <Reveal>
           <p className="text-[2em] 2xl:text-[2.5em]">Why hire me?</p>
         </Reveal>
         <Reveal>
-          <p className="smoke text-[1em] 2xl:text-[1.2em] mb-4 text-justify">
+          <p className="smoke text-[1em] 2xl:text-[1.2em] mb-4 text-justify tracking-tight">
             My experience with modern frameworks like Next.js and React, coupled
             with my dedication to creating user-friendly and impactful web
             applications, ensures that I can deliver high-quality results.
@@ -42,7 +43,7 @@ const ResumePage = () => {
           About me
         </CustomizedButtons>
       </div>
-      <div className="flex flex-col w-full sm:w-[50%] lg:w-[60%] xl:w-[70%] gap-4">
+      <div className="flex flex-col w-full xl:w-[70%] gap-4">
         {resumeDetails.map((detail, index) => {
           return (
             <>
@@ -71,7 +72,7 @@ const ResumePage = () => {
 
         {category === "About me" && <About />}
       </div>
-    </div>
+    </MaxWidthWrapper>
   );
 };
 

@@ -28,24 +28,6 @@ const ContactForm = () => {
     },
   });
 
-  // const onSubmit = async (values: z.infer<typeof contactSchema>) => {
-  //   setIsLoading(true);
-  //   try {
-  //     await fetch("/api/email", {
-  //       method: "POST",
-  //       headers: {
-  //         "Content-Type": "application/json",
-  //       },
-  //       body: JSON.stringify(values),
-  //     });
-  //   } catch (error) {
-  //     console.log("Axios request failed:", error);
-  //     // Handle error appropriately
-  //   } finally {
-  //     setIsLoading(false);
-  //   }
-  // };
-
   return (
     <Form {...formData}>
       <form action={sendEmail} className="flex flex-col gap-6 w-full">
