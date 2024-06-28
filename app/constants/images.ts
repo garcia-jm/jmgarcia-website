@@ -1,4 +1,6 @@
 import comingsoon from "@/public/assets/images/Recipe Radar/coming-soon.jpeg";
+
+// Workshops
 import w6_frontPage from "@/public/assets/images/Workshop 6/front-page.png";
 import w6_customerPage from "@/public/assets/images/Workshop 6/customer-page.png";
 import w6_agentsPage from "@/public/assets/images/Workshop 6/agents-page.png";
@@ -10,6 +12,7 @@ import w8_profilePage from "@/public/assets/images/Workshop 8/profile-page.png";
 import w8_registerPage from "@/public/assets/images/Workshop 8/register-page.png";
 import w8_welcomePage from "@/public/assets/images/Workshop 8/welcome-page.png";
 
+// Ingraph
 import ing_1 from "@/public/assets/images/Ingraph/ing_screenshot_1.png";
 import ing_2 from "@/public/assets/images/Ingraph/ing_screenshot_2.png";
 import ing_3 from "@/public/assets/images/Ingraph/ing_screenshot_3.png";

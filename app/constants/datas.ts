@@ -28,8 +28,6 @@ import {
   DiJqueryLogo as jqueryIcon,
 } from "react-icons/di";
 
-import { images } from "./images";
-
 export const learnAtSchool = [
   "HTML5",
   "JavaScript",
@@ -177,7 +175,36 @@ export const projects = [
       "./assets/images/Ingraph/ing_screenshot_11.png",
     ],
   },
-
+  {
+    title: "Case Cobra",
+    skills: [
+      "Next.js",
+      "React.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "React-Query",
+      "Stripe",
+      "Prisma",
+      "PostgreSQL",
+      "Shadcn",
+      "Resend"
+    ],
+    shortDescription: "A web application that allows users to create, customize, and purchase a phone case.",
+    description: "Case Cobra is a web application that allows users to create, customize, and purchase a phone case. The application has a user authentication system, a billing system, and an edit studio where users can customize a phone case that they want to purchase.",
+    imgUrl: [
+      "./assets/images/CaseCobra/cc-01.png",
+      "./assets/images/CaseCobra/cc-02.png",
+      "./assets/images/CaseCobra/cc-03.png",
+      "./assets/images/CaseCobra/cc-04.png",
+      "./assets/images/CaseCobra/cc-05.png",
+      "./assets/images/CaseCobra/cc-06.png",
+      "./assets/images/CaseCobra/cc-07.png",
+      "./assets/images/CaseCobra/cc-08.png",
+      "./assets/images/CaseCobra/cc-09.png",
+      "./assets/images/CaseCobra/cc-10.png",
+      "./assets/images/CaseCobra/cc-11.png",
+    ]
+  },
   {
     title: "Recipe Radar",
     skills: [
