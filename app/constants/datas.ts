@@ -227,8 +227,23 @@ export const projects = [
 
 export const experiences = [
   {
+    company: "Freelance Job (Remote)",
+    date: "Jul. 2024 - Present",
+    position: "Backend Developer",
+    location: "Calgary, AB",
+    description: "As a Backend Developer, I am responsible for managing and processing over 250,000 user data entries, ensuring efficient and secure data handling for our clients.",
+    skills: [
+      "React",
+      "Node.js",
+      "Express.js",
+      "Microservices",
+      "SCSS",
+      "MySQL",
+    ]
+  },
+  {
     company: "Ingraph Ltd.",
-    date: "Jan - May 2024",
+    date: "Jan. 2024 - Ma. 2024",
     position: "Web Developer",
     location: "Calgary, AB",
     description:

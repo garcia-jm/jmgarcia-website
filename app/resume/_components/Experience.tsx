@@ -5,6 +5,11 @@ const Experience = () => {
   return (
     <div className="flex flex-wrap gap-4 2xl:gap-12">
       <Card
+        title="Backend Developer"
+        subtitle="Freelance Job (Remote)"
+        date="July 2024 - Present"
+      />
+      <Card
         title="Web Developer"
         subtitle="Ingraph Ltd."
         date="January - May 2024"
