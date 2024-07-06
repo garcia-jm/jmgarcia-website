@@ -9,7 +9,7 @@ const Header = ({ title, position }: HeaderProps) => {
   return (
     <div className="flex gap-4 items-center mb-4">
       {position === "left" ? (
-        <p className="text-[#ebecf3] font-bold text-[1.8em] sm:text-[2.5em] lg:text-[3em]">
+        <p className="text-[#ebecf3] text-nowrap font-bold text-[1.8em] sm:text-[2.5em] lg:text-[3em]">
           {title}
           <span className="emerald">.</span>
         </p>
@@ -20,7 +20,7 @@ const Header = ({ title, position }: HeaderProps) => {
       {position === "left" ? (
         <hr className="border-[#828282] w-[100%] border-[1px]" />
       ) : (
-        <p className="text-[#ebecf3] font-bold text-[1.8em] sm:text-[2.5em] lg:text-[3em]">
+        <p className="text-[#ebecf3] text-nowrap font-bold text-[1.8em] sm:text-[2.5em] lg:text-[3em]">
           {title}
           <span className="emerald">.</span>
         </p>

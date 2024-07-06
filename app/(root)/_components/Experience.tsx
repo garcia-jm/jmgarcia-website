@@ -8,7 +8,7 @@ const Experience = () => {
   return (
     <section className="mb-[20rem]">
       <MaxWidthWrapper>
-        <Header title="Experience" position="left" />
+        <Header title="Work Experience" position="left" />
         <div className="flex flex-col gap-12">
           {experiences.map((data, index) => (
             <div key={index}>
