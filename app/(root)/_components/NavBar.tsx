@@ -26,9 +26,9 @@ const NavBar = () => {
         </p>
         <div className="hidden md:block">
           <ul className="flex items-center gap-8 text-lg lg:text-xl 2xl:text-xl">
-            <li className="hover:emerald transition-all ease-in-out duration-300">
+            {/* <li className="hover:emerald transition-all ease-in-out duration-300">
               <Link href="/resume">Resume</Link>
-            </li>
+            </li> */}
             {/* <li className="hover:emerald transition-all ease-in-out duration-300">
             <Link href="/projects">Projects</Link>
           </li>

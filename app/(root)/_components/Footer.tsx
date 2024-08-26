@@ -28,11 +28,11 @@ const Footer = () => {
                 Links
               </p>
             </Reveal>
-            <Reveal>
+            {/* <Reveal>
               <Link className="2xl:text-[1.2em]" href="/resume">
                 Resume
               </Link>
-            </Reveal>
+            </Reveal> */}
             {/* <Reveal>
             <Link className="2xl:text-[1.2em]" href="/work">
               Work
