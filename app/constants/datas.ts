@@ -187,10 +187,12 @@ export const projects = [
       "Prisma",
       "PostgreSQL",
       "Shadcn",
-      "Resend"
+      "Resend",
     ],
-    shortDescription: "A web application that allows users to create, customize, and purchase a phone case.",
-    description: "Case Cobra is a web application that allows users to create, customize, and purchase a phone case. The application has a user authentication system, a billing system, and an edit studio where users can customize a phone case that they want to purchase.",
+    shortDescription:
+      "A web application that allows users to create, customize, and purchase a phone case.",
+    description:
+      "Case Cobra is a web application that allows users to create, customize, and purchase a phone case. The application has a user authentication system, a billing system, and an edit studio where users can customize a phone case that they want to purchase.",
     imgUrl: [
       "./assets/images/CaseCobra/cc-01.png",
       "./assets/images/CaseCobra/cc-02.png",
@@ -203,7 +205,7 @@ export const projects = [
       "./assets/images/CaseCobra/cc-09.png",
       "./assets/images/CaseCobra/cc-10.png",
       "./assets/images/CaseCobra/cc-11.png",
-    ]
+    ],
   },
   {
     title: "Recipe Radar",
@@ -228,10 +230,11 @@ export const projects = [
 export const experiences = [
   {
     company: "Freelance Job (Remote)",
-    date: "Jul. 2024 - Present",
+    date: "Jul. 2024 - Oct. 2024",
     position: "Backend Developer",
     location: "Calgary, AB",
-    description: "As a Backend Developer, I am responsible for managing and processing over 250,000 user data entries, ensuring efficient and secure data handling for our clients.",
+    description:
+      "As a Backend Developer, I am responsible for managing and processing over 250,000 user data entries, ensuring efficient and secure data handling for our clients.",
     skills: [
       "React",
       "Node.js",
@@ -239,7 +242,7 @@ export const experiences = [
       "Microservices",
       "SCSS",
       "MySQL",
-    ]
+    ],
   },
   {
     company: "Ingraph Ltd.",
