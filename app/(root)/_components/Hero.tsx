@@ -10,7 +10,7 @@ const Hero = () => {
       <MaxWidthWrapper className="flex flex-col">
         <Reveal>
           <p className="text-[1.6em] sm:text-[1.8em] md:text-[2.5em] lg:text-[3.5em] font-bold">
-            Hey, I&apos;m Justin Mari Garcia<span className="emerald">.</span>
+            Hey, I&apos;m Justin<span className="emerald">.</span>
           </p>
         </Reveal>
         <Reveal>
