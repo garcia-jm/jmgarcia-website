@@ -207,24 +207,24 @@ export const projects = [
       "./assets/images/CaseCobra/cc-11.png",
     ],
   },
-  {
-    title: "Recipe Radar",
-    skills: [
-      "Next.js",
-      "React",
-      "TypeScript",
-      "Tailwind CSS",
-      "Redux",
-      "Node.js",
-      "Express.js",
-      "Third Party API",
-    ],
-    shortDescription:
-      "A React Web Application that uses third-party API to gather and provide data or information to the users.",
-    description:
-      "A React Web Application that uses third-party API to gather and provide data or information to the users. Radar Recipe serves as a tool for people who are looking for food that they want to cook by providing the image of the food, ingredients, and steps on how to prepare and cook the food.",
-    imgUrl: ["./assets/images/Recipe Radar/coming-soon.jpeg"],
-  },
+  // {
+  //   title: "Recipe Radar",
+  //   skills: [
+  //     "Next.js",
+  //     "React",
+  //     "TypeScript",
+  //     "Tailwind CSS",
+  //     "Redux",
+  //     "Node.js",
+  //     "Express.js",
+  //     "Third Party API",
+  //   ],
+  //   shortDescription:
+  //     "A React Web Application that uses third-party API to gather and provide data or information to the users.",
+  //   description:
+  //     "A React Web Application that uses third-party API to gather and provide data or information to the users. Radar Recipe serves as a tool for people who are looking for food that they want to cook by providing the image of the food, ingredients, and steps on how to prepare and cook the food.",
+  //   imgUrl: ["./assets/images/Recipe Radar/coming-soon.jpeg"],
+  // },
 ];
 
 export const experiences = [
